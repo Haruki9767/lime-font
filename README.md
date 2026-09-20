@@ -10,7 +10,9 @@ A responsive type specimen website for **Handwritten Symbols**, a hybrid handwri
 - A pink, white, and cherry-blossom visual theme with the supplied hero artwork.
 - A custom client-side 404 page.
 - SEO metadata, canonical URL, Open Graph/Twitter fields, JSON-LD, sitemap, and robots rules.
-- The distributable font file at [`client/public/lime-fonts.ttf`](client/public/lime-fonts.ttf).
+- The distributable font files at [`client/public/lime-fonts.ttf`](client/public/lime-fonts.ttf) and [`client/public/lime-fonts.woff2`](client/public/lime-fonts.woff2).
+- A reproducible WOFF2 generator at [`scripts/generate_woff2.py`](scripts/generate_woff2.py).
+- Separate font terms in [`FONT-LICENSE.md`](FONT-LICENSE.md); the font is not covered by the source-code MIT license.
 
 ## Development
 
@@ -26,6 +28,8 @@ Open the local Vite URL shown in the terminal. To run the production checks:
 ```bash
 pnpm check
 pnpm build
+python -m pip install fonttools brotli
+python scripts/generate_woff2.py
 ```
 
 ## Font usage
@@ -33,12 +37,12 @@ pnpm build
 ```css
 @font-face {
   font-family: "Handwritten Symbols";
-  src: url("/lime-fonts.ttf") format("truetype");
+  src: url("/lime-fonts.woff2") format("woff2"), url("/lime-fonts.ttf") format("truetype");
   font-display: swap;
 }
 ```
 
-The font was assembled by using the HandScript alphabet with the symbol set from HandwrittenCustom. Confirm licensing and distribution permission before using it in a public or commercial project.
+The font was assembled by using the HandScript alphabet with the symbol set from HandwrittenCustom. Read [`FONT-LICENSE.md`](FONT-LICENSE.md) before using or distributing the font files.
 
 ## Creator
 
