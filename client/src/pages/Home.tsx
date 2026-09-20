@@ -57,7 +57,7 @@ export default function Home() {
             <p className="hero-intro">An expressive alphabet paired with a full punctuation and symbol set..</p>
             <a className="text-link" href="#specimen">Explore the specimen <span>↘</span></a>
           </div>
-          <div className="hero-note"><span className="note-mark">✳</span><span>Made bh.<br />Lime.</span></div>
+          <div className="hero-note"><span className="note-mark">✳</span><span>Made by<br />Lime.</span></div>
         </section>
 
         <section className="statement-band" aria-label="Typeface statement">
