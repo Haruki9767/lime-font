@@ -59,7 +59,6 @@ export default function Home() {
             <p className="hero-intro">An expressive alphabet paired with a full punctuation and symbol set. Made for words that want to leave a mark.</p>
             <a className="text-link" href="#specimen">Explore the specimen <span>↘</span></a>
           </div>
-          <div className="hero-display" aria-label="Decorative font sample">Aa</div>
           <div className="hero-note"><span className="note-mark">✳</span><span>One font.<br />Two voices.</span></div>
         </section>
 
