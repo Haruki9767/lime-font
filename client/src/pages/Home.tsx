@@ -120,7 +120,11 @@ export default function Home() {
       <footer className="site-footer">
         <span>Handwritten Symbols / 2026</span>
         <a href="#top">Back to top <ChevronDown size={15} className="rotate-up" /></a>
-        <span>Built for expressive use</span>
+        <nav className="creator-links" aria-label="Creator links">
+          <a href="https://lime.is-a.dev/" target="_blank" rel="noreferrer">Portfolio</a>
+          <a href="https://github.com/Haruki9767/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://l1me.de5.net/" target="_blank" rel="noreferrer">About me</a>
+        </nav>
       </footer>
     </div>
   );

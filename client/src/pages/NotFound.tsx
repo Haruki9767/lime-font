@@ -1,6 +1,19 @@
+import { useEffect } from "react";
 import { ArrowLeft, Home } from "lucide-react";
 
 export default function NotFound() {
+  useEffect(() => {
+    document.title = "Page not found — Handwritten Symbols";
+    const robots = document.querySelector('meta[name="robots"]') ?? document.createElement("meta");
+    robots.setAttribute("name", "robots");
+    robots.setAttribute("content", "noindex, follow");
+    document.head.appendChild(robots);
+    return () => {
+      document.title = "Handwritten Symbols — Font Specimen";
+      robots.remove();
+    };
+  }, []);
+
   return (
     <main className="not-found" aria-labelledby="not-found-title">
       <div className="not-found-petal petal-one" aria-hidden="true">✿</div>

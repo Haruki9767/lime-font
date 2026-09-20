@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-# Add the production sitemap URL after the canonical domain is selected.
+Disallow: /404
+Sitemap: https://handfont-mzt7occn.manus.space/sitemap.xml
