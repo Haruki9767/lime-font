@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ArrowLeft, Home } from "lucide-react";
+import { Home } from "lucide-react";
 
 export default function NotFound() {
   useEffect(() => {
@@ -25,7 +25,6 @@ export default function NotFound() {
         <p className="not-found-copy">The address may be misspelled, or the page may have moved. Let’s get you back to the specimen.</p>
         <div className="not-found-actions">
           <a className="button-link" href="/"><Home size={16} /> Back to the specimen</a>
-          <button className="text-link" type="button" onClick={() => window.history.back()}><ArrowLeft size={15} /> Go back</button>
         </div>
       </div>
     </main>

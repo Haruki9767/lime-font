@@ -28,9 +28,9 @@ Open the local Vite URL shown in the terminal. To run the production checks:
 ```bash
 pnpm check
 pnpm build
-python -m pip install fonttools brotli
-python scripts/generate_woff2.py
 ```
+
+The checked-in `lime-fonts.ttf` and `lime-fonts.woff2` files are the authoritative font assets used by the site. CI validates the website without regenerating or modifying them. The generator script is retained only for an intentional future font rebuild.
 
 ## Font usage
 

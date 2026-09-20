@@ -27,17 +27,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Set up Python for font generation
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install font tooling
-        run: python -m pip install --disable-pip-version-check fonttools brotli
-
-      - name: Generate and validate WOFF2 font
-        run: python scripts/generate_woff2.py
-
       - name: Typecheck
         run: pnpm check
 
