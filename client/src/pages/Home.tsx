@@ -5,6 +5,7 @@ const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
 const punctuation = "! ? @ # $ % & * ( ) [ ] { } — _ + = / \\ : ; , . ' \" `";
 const symbols = "× ÷ ≠ ‘ ’ “ ”";
+const testLines = ["A little less ordinary.", "Make a mark!", "Type / play / repeat"];
 
 function GlyphRow({ label, value }: { label: string; value: string }) {
   return (
@@ -84,9 +85,9 @@ export default function Home() {
                 <button type="button" onClick={() => setSize((current) => Math.min(164, current + 8))} aria-label="Increase type size"><Plus size={15} /></button>
               </div>
             </div>
-            <textarea id="sample-input" value={sample} maxLength={120} onChange={(event) => setSample(event.target.value)} aria-describedby="sample-help" />
+            <textarea id="sample-input" value={sample} placeholder="Type here to test the font…" maxLength={120} spellCheck={false} onChange={(event) => setSample(event.target.value)} aria-describedby="sample-help" />
             <div className="sample-preview" style={sampleStyle}>{sample || "Start typing"}</div>
-            <div className="panel-footer"><span id="sample-help">Drag the corner to make room.</span><span>{sample.length}/120</span></div>
+            <div className="panel-footer"><span id="sample-help">Type in the box above, or try a phrase:</span><div className="test-lines">{testLines.map((line) => <button type="button" key={line} onClick={() => setSample(line)}>{line}</button>)}<button type="button" className="reset-button" onClick={() => setSample("")}>Clear</button><span>{sample.length}/120</span></div></div>
           </div>
         </section>
 
