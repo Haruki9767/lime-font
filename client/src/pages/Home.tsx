@@ -123,6 +123,7 @@ export default function Home() {
         <nav className="creator-links" aria-label="Creator links">
           <a href="https://lime.is-a.dev/" target="_blank" rel="noreferrer">Portfolio</a>
           <a href="https://github.com/Haruki9767/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/Haruki9767/lime-font" target="_blank" rel="noreferrer">Repo</a>
           <a href="https://l1me.de5.net/" target="_blank" rel="noreferrer">About me</a>
         </nav>
       </footer>
