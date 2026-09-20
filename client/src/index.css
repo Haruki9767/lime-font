@@ -9,10 +9,10 @@
   font-display: swap;
 }
 
-:root { --ink: #1d1c19; --paper: #f1eee7; --paper-deep: #e6e1d7; --accent: #d5573f; --muted: #807b70; --line: rgba(29,28,25,.2); --ease: cubic-bezier(.23,1,.32,1); }
+:root { --ink: #5d2038; --paper: #fff8fb; --paper-deep: #f8dce7; --accent: #c94875; --muted: #956477; --line: rgba(93,32,56,.2); --ease: cubic-bezier(.23,1,.32,1); }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Handwritten Symbols", cursive; }
 button, textarea { font: inherit; }
 a { color: inherit; }
 .site-shell { min-width: 320px; overflow: hidden; }
@@ -25,7 +25,9 @@ a { color: inherit; }
 .nav-links a:hover, .download-link:hover, .site-footer a:hover { color: var(--accent); }
 .download-link { align-items: center; display: flex; gap: 10px; justify-self: end; text-decoration: none; }
 .menu-button { display: none; background: none; border: 0; color: var(--ink); }
-.hero { display: grid; grid-template-columns: 8% minmax(300px, 1.15fr) 1fr 15%; min-height: 660px; position: relative; }
+.hero { background: #f2bfd0 url("/manus-storage/163851f759def2d8bf80494391a29d70_01c6c99e.jpg") center / cover no-repeat; display: grid; grid-template-columns: 8% minmax(300px, 1.15fr) 1fr 15%; min-height: 660px; position: relative; }
+.hero::before { background: rgba(255, 248, 251, .62); content: ""; inset: 0; position: absolute; }
+.hero > * { position: relative; }
 .hero-rail { align-items: center; border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 28px; justify-content: center; }
 .hero-rail span, .band-index, .about-number { color: var(--muted); font-size: 11px; letter-spacing: .12em; }
 .hero-rail i { background: var(--accent); display: block; height: 74px; width: 1px; }
@@ -41,7 +43,7 @@ h1 em, h2 em { color: var(--accent); font-style: normal; }
 .hero-note { align-self: end; display: flex; gap: 12px; padding: 0 0 74px; }
 .note-mark { color: var(--accent); font-size: 34px; line-height: .8; }
 .hero-note span:last-child { font-family: "Handwritten Symbols", cursive; font-size: 25px; line-height: .85; }
-.statement-band { align-items: end; background: var(--ink); color: var(--paper); display: flex; justify-content: space-between; padding: 56px clamp(22px, 8vw, 124px) 50px; }
+.statement-band { align-items: end; background: #5d2038; color: var(--paper); display: flex; justify-content: space-between; padding: 56px clamp(22px, 8vw, 124px) 50px; }
 .statement-band p { font-family: "Handwritten Symbols", cursive; font-size: clamp(42px, 6vw, 88px); letter-spacing: -.04em; line-height: .82; margin: 0; }
 .statement-band p span { color: #aaa59a; }
 .section-wrap { margin: 0 auto; max-width: 1240px; padding: 150px clamp(22px, 6vw, 76px); }
