@@ -54,10 +54,10 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow">A hybrid handwriting typeface</p>
             <h1 id="page-title">Handwritten<br /><em>Symbols</em></h1>
-            <p className="hero-intro">An expressive alphabet paired with a full punctuation and symbol set. Made for words that want to leave a mark.</p>
+            <p className="hero-intro">An expressive alphabet paired with a full punctuation and symbol set..</p>
             <a className="text-link" href="#specimen">Explore the specimen <span>↘</span></a>
           </div>
-          <div className="hero-note"><span className="note-mark">✳</span><span>One font.<br />Two voices.</span></div>
+          <div className="hero-note"><span className="note-mark">✳</span><span>Made bh.<br />Lime.</span></div>
         </section>
 
         <section className="statement-band" aria-label="Typeface statement">
@@ -91,7 +91,7 @@ export default function Home() {
         <section className="glyph-section section-wrap" id="glyphs" aria-labelledby="glyph-title">
           <div className="glyph-intro">
             <p className="eyebrow">The complete set</p>
-            <h2 id="glyph-title">Every mark<br /><em>counts.</em></h2>
+            <h2 id="glyph-title">All<br /><em>characters</em></h2>
           </div>
           <div className="glyph-list">
             <GlyphRow label="Upper + lowercase" value={alphabet} />
@@ -102,10 +102,10 @@ export default function Home() {
         </section>
 
         <section className="about-section" id="about" aria-labelledby="about-title">
-          <div className="about-number">02</div>
+          <div className="about-number"></div>
           <div>
             <p className="eyebrow">About the build</p>
-            <h2 id="about-title">Two gestures,<br /><em>one rhythm.</em></h2>
+            <h2 id="about-title">Everything is<br /><em>Handwritten</em></h2>
           </div>
           <div className="about-copy">
             <p>Handwritten Symbols brings together the letterforms of HandScript with the punctuation and mathematical marks from Handwritten Custom.</p>
