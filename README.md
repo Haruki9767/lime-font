@@ -10,8 +10,7 @@ A responsive type specimen website for **Handwritten Symbols**, a hybrid handwri
 - A pink, white, and cherry-blossom visual theme with the supplied hero artwork.
 - A custom client-side 404 page.
 - SEO metadata, canonical URL, Open Graph/Twitter fields, JSON-LD, sitemap, and robots rules.
-- The distributable font files at [`client/public/lime-fonts.ttf`](client/public/lime-fonts.ttf) and [`client/public/lime-fonts.woff2`](client/public/lime-fonts.woff2).
-- A reproducible WOFF2 generator at [`scripts/generate_woff2.py`](scripts/generate_woff2.py).
+- The provided font files at [`client/public/lime-fonts.ttf`](client/public/lime-fonts.ttf) and [`client/public/lime-fonts.woff`](client/public/lime-fonts.woff).
 - Separate font terms in [`FONT-LICENSE.md`](FONT-LICENSE.md); the font is not covered by the source-code MIT license.
 
 ## Development
@@ -30,14 +29,14 @@ pnpm check
 pnpm build
 ```
 
-The checked-in `lime-fonts.ttf` and `lime-fonts.woff2` files are the authoritative font assets used by the site. CI validates the website without regenerating or modifying them. The generator script is retained only for an intentional future font rebuild.
+The checked-in `lime-fonts.ttf` and `lime-fonts.woff` files are the authoritative font assets used by the site. CI validates the website without regenerating or modifying them.
 
 ## Font usage
 
 ```css
 @font-face {
   font-family: "Handwritten Symbols";
-  src: url("/lime-fonts.woff2") format("woff2"), url("/lime-fonts.ttf") format("truetype");
+  src: url("/lime-fonts.woff") format("woff"), url("/lime-fonts.ttf") format("truetype");
   font-display: swap;
 }
 ```
