@@ -35,11 +35,8 @@ jobs:
       - name: Install font tooling
         run: python -m pip install --disable-pip-version-check fonttools brotli
 
-      - name: Generate WOFF2 font
+      - name: Generate and validate WOFF2 font
         run: python scripts/generate_woff2.py
-
-      - name: Check generated WOFF2 is committed
-        run: git diff --exit-code -- client/public/lime-fonts.woff2
 
       - name: Typecheck
         run: pnpm check

@@ -11,4 +11,9 @@ if not SOURCE.is_file():
 font = TTFont(str(SOURCE))
 font.flavor = "woff2"
 font.save(str(TARGET))
-print(f"Generated {TARGET} from {SOURCE}")
+
+generated = TTFont(str(TARGET))
+if generated.flavor != "woff2" or not generated.getGlyphOrder():
+    raise SystemExit(f"Invalid WOFF2 output: {TARGET}")
+
+print(f"Generated and validated {TARGET} from {SOURCE} ({len(generated.getGlyphOrder())} glyphs)")
