@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* This project uses lime-fonts. */
 @font-face {
   font-family: "Handwritten Symbols";
   src: url("/fonts/lime-fonts.woff") format("woff"), url("/fonts/lime-fonts.ttf") format("truetype");
