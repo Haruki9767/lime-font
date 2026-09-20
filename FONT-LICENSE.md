@@ -6,11 +6,15 @@ Copyright (c) 2026 Haruki9767. All rights reserved for the font files.
 
 You may use `lime-fonts.ttf` and `lime-fonts.woff` free of charge in personal and commercial creative work, including graphics, websites, applications, videos, packaging, and other finished products, provided that you credit **Haruki9767 / lime-font** wherever credits or attribution are reasonably provided.
 
+## Website embedding
+
+You may embed the font in a website with CSS `@font-face` without asking Haruki9767 for separate permission. Browser requests for the font files that are necessary to render that website are permitted. This permission covers normal website rendering only; it does not permit publishing a standalone font download, linking directly to the font files for download, or making the files available as a general asset for visitors to reuse.
+
 ## Restrictions
 
 You may not sell, sublicense, rent, lease, or otherwise monetize the font files themselves. You may not redistribute, re-upload, mirror, bundle, package, or include the font files in another font collection, template, theme, library, repository, download archive, or service without prior written permission from Haruki9767. You may not claim the font as your own, rename it and release it as a new font, remove its attribution or metadata, or use it without credit when a credits or attribution section is available.
 
-Use of the font in a website or application must not make the font files available as a standalone download unless that use is authorized. If your distribution model requires embedding or redistributing the font file, request permission first.
+If your distribution model requires packaging, redistributing, or offering the font files outside normal website rendering, request written permission first.
 
 ## Attribution
 
