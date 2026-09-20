@@ -13,23 +13,6 @@ A responsive type specimen website for **Handwritten Symbols**, a hybrid handwri
 - The provided font files at [`client/public/fonts/lime-fonts.ttf`](client/public/fonts/lime-fonts.ttf) and [`client/public/fonts/lime-fonts.woff`](client/public/fonts/lime-fonts.woff).
 - Separate font terms in [`FONT-LICENSE.md`](FONT-LICENSE.md); the font is not covered by the source-code MIT license.
 
-## Development
-
-This is a React 19 + Vite + TypeScript + Tailwind CSS static site.
-
-```bash
-pnpm install
-pnpm dev
-```
-
-Open the local Vite URL shown in the terminal. To run the production checks:
-
-```bash
-pnpm check
-pnpm build
-```
-
-The checked-in `client/public/fonts/lime-fonts.ttf` and `client/public/fonts/lime-fonts.woff` files are the authoritative font assets used by the site. CI validates the website without regenerating or modifying them. The committed `client/public/background.jpg` is used as the hero and social preview image.
 
 ## Font usage
 
