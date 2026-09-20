@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# Add the production sitemap URL after the canonical domain is selected.

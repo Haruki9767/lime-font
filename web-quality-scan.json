@@ -1,0 +1,19 @@
+{
+  "root": "/home/ubuntu/handwritten-font-specimen",
+  "origin": "",
+  "files_scanned": 80,
+  "findings": [],
+  "summary": {
+    "total": 0,
+    "info": 0,
+    "low": 0,
+    "medium": 0,
+    "high": 0,
+    "fail_on": "high"
+  },
+  "notes": [
+    "This scanner is triage only; review each signal in source context.",
+    "Static 404 documents are excluded from indexable-page metadata checks.",
+    "Generated, vendor, dependency, and scanner source directories are excluded."
+  ]
+}
