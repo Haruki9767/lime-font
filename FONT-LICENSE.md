@@ -30,4 +30,4 @@ Add this comment near the font declaration or import:
 
 The font is provided “as is”, without warranty of any kind. This font license applies to the font files only; the repository source code is licensed separately under the MIT License in `LICENSE`.
 
-For permission requests or licensing questions, contact the copyright holder through the profile links in the repository README.
+For permission questions, contact Haruki9767 through the profile links in the repository README.
