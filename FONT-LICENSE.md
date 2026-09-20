@@ -4,7 +4,7 @@ Copyright (c) 2026 Haruki9767. All rights reserved for the font files.
 
 ## Permission
 
-You may use `lime-fonts.ttf` and `lime-fonts.woff2` free of charge in personal and commercial creative work, including graphics, websites, applications, videos, packaging, and other finished products, provided that you credit **Haruki9767 / lime-font** wherever credits or attribution are reasonably provided.
+You may use `lime-fonts.ttf` and `lime-fonts.woff` free of charge in personal and commercial creative work, including graphics, websites, applications, videos, packaging, and other finished products, provided that you credit **Haruki9767 / lime-font** wherever credits or attribution are reasonably provided.
 
 ## Restrictions
 

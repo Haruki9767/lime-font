@@ -10,7 +10,7 @@ A responsive type specimen website for **Handwritten Symbols**, a hybrid handwri
 - A pink, white, and cherry-blossom visual theme with the supplied hero artwork.
 - A custom client-side 404 page.
 - SEO metadata, canonical URL, Open Graph/Twitter fields, JSON-LD, sitemap, and robots rules.
-- The provided font files at [`client/public/lime-fonts.ttf`](client/public/lime-fonts.ttf) and [`client/public/lime-fonts.woff`](client/public/lime-fonts.woff).
+- The provided font files at [`client/public/fonts/lime-fonts.ttf`](client/public/fonts/lime-fonts.ttf) and [`client/public/fonts/lime-fonts.woff`](client/public/fonts/lime-fonts.woff).
 - Separate font terms in [`FONT-LICENSE.md`](FONT-LICENSE.md); the font is not covered by the source-code MIT license.
 
 ## Development
@@ -29,14 +29,14 @@ pnpm check
 pnpm build
 ```
 
-The checked-in `lime-fonts.ttf` and `lime-fonts.woff` files are the authoritative font assets used by the site. CI validates the website without regenerating or modifying them.
+The checked-in `client/public/fonts/lime-fonts.ttf` and `client/public/fonts/lime-fonts.woff` files are the authoritative font assets used by the site. CI validates the website without regenerating or modifying them. The committed `client/public/background.jpg` is used as the hero and social preview image.
 
 ## Font usage
 
 ```css
 @font-face {
   font-family: "Handwritten Symbols";
-  src: url("/lime-fonts.woff") format("woff"), url("/lime-fonts.ttf") format("truetype");
+  src: url("/fonts/lime-fonts.woff") format("woff"), url("/fonts/lime-fonts.ttf") format("truetype");
   font-display: swap;
 }
 ```
