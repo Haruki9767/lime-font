@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Handwritten Symbols";
-  src: url("/HandwrittenSymbols-HandScriptAlphabet.ttf") format("truetype");
+  src: url("/lime-fonts.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;

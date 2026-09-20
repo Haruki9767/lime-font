@@ -60,7 +60,7 @@ The draft has no backend, authentication, data persistence, or external integrat
 1. `pnpm check` exits successfully.
 2. `pnpm build` exits successfully.
 3. The baseline web-quality scanner returns zero high-severity findings.
-4. The font loads from `/HandwrittenSymbols-HandScriptAlphabet.ttf` in the rendered page.
+4. The font loads from `/lime-fonts.ttf` in the rendered page.
 5. The sample field, size controls, mobile menu, anchor navigation, and download links are present in source.
 6. The final audit records untested manual checks rather than claiming them as passed.
 

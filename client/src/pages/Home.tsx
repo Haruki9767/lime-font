@@ -42,7 +42,7 @@ export default function Home() {
           <a href="#glyphs" onClick={() => setMenuOpen(false)}>Glyphs</a>
           <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
         </nav>
-        <a className="download-link" href="/HandwrittenSymbols-HandScriptAlphabet.ttf" download>
+        <a className="download-link" href="/lime-fonts.ttf" download>
           Download font <ArrowDownToLine size={15} aria-hidden="true" />
         </a>
         <button className="menu-button" type="button" aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)}>
@@ -112,7 +112,7 @@ export default function Home() {
           <div className="about-copy">
             <p>Handwritten Symbols brings together the letterforms of HandScript with the punctuation and mathematical marks from Handwritten Custom.</p>
             <p>The result is a single, ready-to-use font for notes, posters, packaging, invitations, and any interface that needs a human accent.</p>
-            <a className="button-link" href="/HandwrittenSymbols-HandScriptAlphabet.ttf" download>Get the TTF <ArrowDownToLine size={16} /></a>
+            <a className="button-link" href="/lime-fonts.ttf" download>Get the TTF <ArrowDownToLine size={16} /></a>
           </div>
         </section>
       </main>

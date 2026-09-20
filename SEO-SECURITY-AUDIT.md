@@ -25,7 +25,7 @@ The draft has a clear single-purpose information architecture, one meaningful `h
 | `client/public/sitemap.xml` | Adds the canonical homepage URL | Provides a canonical indexable URL to crawlers |
 | `client/src/pages/Home.tsx` | Added specimen content, live editor, glyph inventory, navigation, and download actions | Gives the typeface a coherent public-facing specimen experience |
 | `client/src/index.css` | Added local `@font-face`, responsive layout, focus states, reduced-motion handling, and visual tokens | Loads the merged font and supports responsive accessibility |
-| `client/public/HandwrittenSymbols-HandScriptAlphabet.ttf` | Added the merged font asset | Enables direct local preview and download |
+| `client/public/lime-fonts.ttf` | Added the merged font asset under its public distribution name | Enables direct local preview and download |
 
 ## SEO verification
 
