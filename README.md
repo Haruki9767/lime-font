@@ -29,7 +29,7 @@ pnpm check
 pnpm build
 ```
 
-The checked-in `client/public/fonts/lime-fonts.ttf` and `client/public/fonts/lime-fonts.woff` files are the authoritative provided font assets. Run `python3 scripts/generate_woff2.py` to generate `client/public/fonts/lime-fonts.woff2` from the current TTF. The committed `client/public/background.jpg` is used as the hero and social preview image.
+The checked-in `client/public/fonts/lime-fonts.ttf` and `client/public/fonts/lime-fonts.woff` files are the authoritative provided font assets. Run `pnpm font:woff2` or `python3 scripts/generate_woff2.py` to generate `client/public/fonts/lime-fonts.woff2` from the current TTF. The committed `client/public/background.jpg` is used as the hero and social preview image.
 
 ## Font usage
 

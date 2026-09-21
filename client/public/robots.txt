@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /404
-Sitemap: https://handfont-mzt7occn.manus.space/sitemap.xml
+Sitemap: https://lime-font.pages.dev/sitemap.xml
