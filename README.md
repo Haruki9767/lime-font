@@ -10,8 +10,8 @@ A responsive type specimen website for **Handwritten Symbols**, a hybrid handwri
 - A pink, white, and cherry-blossom visual theme with the supplied hero artwork.
 - A custom client-side 404 page.
 - SEO metadata, canonical URL, Open Graph/Twitter fields, JSON-LD, sitemap, and robots rules.
-- The provided font files at [`client/public/fonts/lime-fonts.ttf`](client/public/fonts/lime-fonts.ttf) and [`client/public/fonts/lime-fonts.woff`](client/public/fonts/lime-fonts.woff).
-- Separate font terms in [`FONT-LICENSE.md`](FONT-LICENSE.md); the font is not covered by the source-code MIT license.
+- The provided font files at [`client/public/fonts/lime-fonts.ttf`](client/public/fonts/lime-fonts.ttf), [`client/public/fonts/lime-fonts.woff`](client/public/fonts/lime-fonts.woff), and generated [`client/public/fonts/lime-fonts.woff2`](client/public/fonts/lime-fonts.woff2).
+- Font licensing in [`OFL.txt`](OFL.txt) and [`FONT-LICENSE.md`](FONT-LICENSE.md); the font is licensed separately from the source-code MIT license.
 
 ## Development
 
@@ -29,19 +29,19 @@ pnpm check
 pnpm build
 ```
 
-The checked-in `client/public/fonts/lime-fonts.ttf` and `client/public/fonts/lime-fonts.woff` files are the authoritative font assets used by the site. CI validates the website without regenerating or modifying them. The committed `client/public/background.jpg` is used as the hero and social preview image.
+The checked-in `client/public/fonts/lime-fonts.ttf` and `client/public/fonts/lime-fonts.woff` files are the authoritative provided font assets. Run `python3 scripts/generate_woff2.py` to generate `client/public/fonts/lime-fonts.woff2` from the current TTF. The committed `client/public/background.jpg` is used as the hero and social preview image.
 
 ## Font usage
 
 ```css
 @font-face {
   font-family: "Handwritten Symbols";
-  src: url("/fonts/lime-fonts.woff") format("woff"), url("/fonts/lime-fonts.ttf") format("truetype");
+  src: url("/fonts/lime-fonts.woff2") format("woff2"), url("/fonts/lime-fonts.woff") format("woff"), url("/fonts/lime-fonts.ttf") format("truetype");
   font-display: swap;
 }
 ```
 
-The font was assembled by using the HandScript alphabet with the symbol set from HandwrittenCustom. Read [`FONT-LICENSE.md`](FONT-LICENSE.md) before using or distributing the font files.
+The font was assembled by using the HandScript alphabet with the symbol set from HandwrittenCustom. Read [`OFL.txt`](OFL.txt) before using or distributing the font files.
 
 ## Creator
 
@@ -51,4 +51,4 @@ The font was assembled by using the HandScript alphabet with the symbol set from
 
 ## License
 
-The website source is released under the MIT License. The font asset may have separate licensing or attribution requirements; verify those before redistribution.
+The website source is released under the MIT License. The font files are released separately under the SIL Open Font License, Version 1.1.

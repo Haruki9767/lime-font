@@ -9,6 +9,7 @@
     "start": "vite preview --host",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
+    "font:woff2": "python3 scripts/generate_woff2.py",
     "format": "prettier --write ."
   },
   "dependencies": {
