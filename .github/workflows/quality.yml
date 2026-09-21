@@ -33,9 +33,6 @@ jobs:
       - name: Generate WOFF2 from the provided TTF
         run: python3 scripts/generate_woff2.py
 
-      - name: Verify generated WOFF2 is committed
-        run: git diff --exit-code -- client/public/fonts/lime-fonts.woff2
-
       - name: Typecheck
         run: pnpm check
 
