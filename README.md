@@ -47,7 +47,7 @@ The font was assembled by using the HandScript alphabet with the symbol set from
 
 - Portfolio: https://lime.is-a.dev/
 - GitHub: https://github.com/Haruki9767/
-- About: https://l1me.de5.net/
+- About: https://lime.is-not.cool/
 
 ## License
 
