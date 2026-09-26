@@ -7,6 +7,8 @@
 }
 
 :root { --ink: #5d2038; --paper: #fff8fb; --paper-deep: #f8dce7; --accent: #c94875; --muted: #956477; --line: rgba(93,32,56,.2); --ease: cubic-bezier(.23,1,.32,1); }
+::selection { background: var(--accent); color: #000; }
+::-moz-selection { background: var(--accent); color: #000; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; width: 100%; }
 body, #__nuxt { margin: 0; max-width: 100%; min-width: 0; width: 100%; }
