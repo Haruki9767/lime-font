@@ -36,6 +36,10 @@ pnpm generate
 
 The checked-in `public/fonts/lime-fonts.ttf` and `public/fonts/lime-fonts.woff` files are the authoritative provided font assets. Run `pnpm font:woff2` or `python3 scripts/generate_woff2.py` to generate `public/fonts/lime-fonts.woff2` from the current TTF. The committed `public/background.jpg` is used as the hero and social preview image.
 
+## Cloudflare Pages
+
+The project is configured for Nuxt's Cloudflare Pages preset. [`wrangler.toml`](wrangler.toml) points Cloudflare Pages at Nuxt's generated `dist` directory; do not use the former Vite `dist/public` output directory.
+
 ## Font usage
 
 ```css
