@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import {
   ChevronDown,
   Copy,
@@ -36,7 +36,7 @@ async function copySample() {
   }
 }
 
-function setSample(line: string) {
+function setSample(line) {
   sample.value = line;
 }
 

@@ -35,8 +35,5 @@ jobs:
       - name: Generate WOFF2 from the provided TTF
         run: pnpm font:woff2
 
-      - name: Typecheck
-        run: pnpm check
-
       - name: Production build
         run: pnpm build

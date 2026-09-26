@@ -10,7 +10,6 @@
     "start": "nuxt start",
     "preview": "nuxt preview --host",
     "generate": "nuxt generate",
-    "check": "nuxt typecheck",
     "font:woff2": "python3 scripts/generate_woff2.py",
     "format": "prettier --write ."
   },
@@ -21,9 +20,7 @@
   },
   "devDependencies": {
     "pnpm": "12.6.0",
-    "prettier": "^3.6.2",
-    "typescript": "^5.9.3",
-    "vue-tsc": "^3.3.11"
+    "prettier": "^3.6.2"
   },
   "packageManager": "pnpm@12.6.0"
 }

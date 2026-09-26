@@ -15,7 +15,7 @@ A responsive type specimen website for **Handwritten Symbols**, a hybrid handwri
 
 ## Stack
 
-This is a **Nuxt 4 + Vue 3 + TypeScript** site managed with the latest pinned pnpm release used by the project.
+This is a **Nuxt 4 + Vue 3** site written with Vue Single-File Components and JavaScript, managed with the latest pinned pnpm release used by the project.
 
 The migration keeps the existing visual design, authored CSS, local font files, copy, responsive breakpoints, SEO assets, and specimen interactions. The former React/Vite implementation has been replaced by Nuxt pages and Vue Composition API state.
 
@@ -29,7 +29,6 @@ pnpm dev
 Open the local Nuxt URL shown in the terminal. To run the production checks:
 
 ```bash
-pnpm check
 pnpm build
 pnpm generate
 ```

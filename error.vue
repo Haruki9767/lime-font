@@ -1,9 +1,9 @@
-<script setup lang="ts">
+<script setup>
 import { Home } from "lucide-vue-next";
 
-const props = defineProps<{
-  error: { statusCode?: number; statusMessage?: string };
-}>();
+const props = defineProps({
+  error: { type: Object, required: true },
+});
 const isNotFound = computed(() => props.error.statusCode === 404);
 
 useHead(() => ({
