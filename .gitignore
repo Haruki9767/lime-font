@@ -88,6 +88,7 @@ jspm_packages/
 
 # Nuxt.js build / generate output
 .nuxt
+.output
 
 # Gatsby files
 .cache/

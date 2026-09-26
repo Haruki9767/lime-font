@@ -10,33 +10,41 @@ A responsive type specimen website for **Handwritten Symbols**, a hybrid handwri
 - A pink, white, and cherry-blossom visual theme with the supplied hero artwork.
 - A custom client-side 404 page.
 - SEO metadata, canonical URL, Open Graph/Twitter fields, JSON-LD, sitemap, and robots rules.
-- The provided font files at [`client/public/fonts/lime-fonts.ttf`](client/public/fonts/lime-fonts.ttf), [`client/public/fonts/lime-fonts.woff`](client/public/fonts/lime-fonts.woff), and generated [`client/public/fonts/lime-fonts.woff2`](client/public/fonts/lime-fonts.woff2).
+- The provided font files at [`public/fonts/lime-fonts.ttf`](public/fonts/lime-fonts.ttf), [`public/fonts/lime-fonts.woff`](public/fonts/lime-fonts.woff), and generated [`public/fonts/lime-fonts.woff2`](public/fonts/lime-fonts.woff2).
 - Font licensing in [`OFL.txt`](OFL.txt) and [`FONT-LICENSE.md`](FONT-LICENSE.md); the font is licensed separately from the source-code MIT license.
 
-## Development
+## Stack
 
-This is a React 19 + Vite + TypeScript + Tailwind CSS static site.
+This is a **Nuxt 4 + Vue 3 + TypeScript** site managed with the latest pinned pnpm release used by the project.
+
+The migration keeps the existing visual design, authored CSS, local font files, copy, responsive breakpoints, SEO assets, and specimen interactions. The former React/Vite implementation has been replaced by Nuxt pages and Vue Composition API state.
+
+## Development
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-Open the local Vite URL shown in the terminal. To run the production checks:
+Open the local Nuxt URL shown in the terminal. To run the production checks:
 
 ```bash
 pnpm check
 pnpm build
+pnpm generate
 ```
 
-The checked-in `client/public/fonts/lime-fonts.ttf` and `client/public/fonts/lime-fonts.woff` files are the authoritative provided font assets. Run `pnpm font:woff2` or `python3 scripts/generate_woff2.py` to generate `client/public/fonts/lime-fonts.woff2` from the current TTF. The committed `client/public/background.jpg` is used as the hero and social preview image.
+The checked-in `public/fonts/lime-fonts.ttf` and `public/fonts/lime-fonts.woff` files are the authoritative provided font assets. Run `pnpm font:woff2` or `python3 scripts/generate_woff2.py` to generate `public/fonts/lime-fonts.woff2` from the current TTF. The committed `public/background.jpg` is used as the hero and social preview image.
 
 ## Font usage
 
 ```css
 @font-face {
   font-family: "Handwritten Symbols";
-  src: url("/fonts/lime-fonts.woff2") format("woff2"), url("/fonts/lime-fonts.woff") format("woff"), url("/fonts/lime-fonts.ttf") format("truetype");
+  src:
+    url("/fonts/lime-fonts.woff2") format("woff2"),
+    url("/fonts/lime-fonts.woff") format("woff"),
+    url("/fonts/lime-fonts.ttf") format("truetype");
   font-display: swap;
 }
 ```

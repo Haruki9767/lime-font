@@ -2,8 +2,8 @@ from pathlib import Path
 from fontTools.ttLib import TTFont
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "client" / "public" / "fonts" / "lime-fonts.ttf"
-TARGET = ROOT / "client" / "public" / "fonts" / "lime-fonts.woff2"
+SOURCE = ROOT / "public" / "fonts" / "lime-fonts.ttf"
+TARGET = ROOT / "public" / "fonts" / "lime-fonts.woff2"
 
 if not SOURCE.is_file():
     raise SystemExit(f"Missing source font: {SOURCE}")

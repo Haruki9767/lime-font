@@ -17,6 +17,8 @@ jobs:
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
+        with:
+          version: 12.6.0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -31,7 +33,7 @@ jobs:
         run: python3 -m pip install --user fonttools brotli
 
       - name: Generate WOFF2 from the provided TTF
-        run: python3 scripts/generate_woff2.py
+        run: pnpm font:woff2
 
       - name: Typecheck
         run: pnpm check
